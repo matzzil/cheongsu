@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>출석부 앱</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>출석부</h1>
+
+    <div id="member-form">
+      <h2>회원 추가</h2>
+      <input type="text" id="name" placeholder="이름" />
+      <input type="text" id="contact" placeholder="연락처" />
+      <button onclick="addMember()">추가</button>
+    </div>
+
+    <div id="member-stats">
+      <h2>회원 통계</h2>
+      <p>총 인원: <span id="total-members">0</span></p>
+      <p>출석 인원: <span id="attended-members">0</span></p>
+      <p>총 회비: <span id="total-fees">0</span>원</p>
+    </div>
+
+    <div id="member-list">
+      <h2>회원 정보</h2>
+      <ul id="members"></ul>
+    </div>
+
+    <div id="expense-form">
+      <h2>추가</h2>
+      <input type="text" id="expense-desc" placeholder="항목" />
+      <input type="number" id="expense-amount" placeholder="금액" />
+      <button onclick="addExpense()">추가</button>
+    </div>
+
+    <div id="expenses">
+      <h2>지출 내역</h2>
+      <ul id="expense-list"></ul>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
